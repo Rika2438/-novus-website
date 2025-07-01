@@ -2338,7 +2338,7 @@
             </div>
             <div class="overview-content">
                 <div class="overview-visual fade-in">
-                    <img src="/var/folders/pv/49xvr0216bn1cdzhmtrys76w0000gn/T/TemporaryItems/NSIRD_screencaptureui_LeMhhD/Screenshot 2025-06-28 at 17.34.32.png" alt="500万人の仮想ペルソナによるAI分析の仕組み" style="width: 100%; max-width: 500px;">
+                    <img src="novus-persona-diagram.png" alt="NOVUS PERSONA - 500万人の仮想ペルソナによるAI分析の仕組み" style="width: 100%; max-width: 800px;">
                 </div>
                 <div class="overview-text fade-in">
                     <p>NOVUS Insightは、マーケティング施策を<span class="highlight">"仮想顧客"</span>に事前検証できる<br>AIベースのマーケティングシミュレーションツールです。</p>
@@ -2457,19 +2457,19 @@
             </div>
             <div class="screenshots-grid">
                 <div class="screenshot-card fade-in">
-                    <h3 class="screenshot-title">投稿・広告検証画面</h3>
-                    <p class="screenshot-description">投稿や広告コピーを仮想市場に投入し、「どのペルソナに刺さるか」「どの要素が反応に影響したか」をスコアで可視化。<br><br>2つのクリエイティブを設定して、ペルソナの反応を比較。直感的な操作で簡単にテスト設定が可能です。</p>
-                    <img src="/var/folders/pv/49xvr0216bn1cdzhmtrys76w0000gn/T/TemporaryItems/NSIRD_screencaptureui_VlYr6M/Screenshot 2025-06-27 at 19.48.11.png" alt="A/Bテスト設定画面" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <h3 class="screenshot-title">インプット画面</h3>
+                    <p class="screenshot-description">検証したい内容を自由に入力できる画面。広告コピー、商品コンセプト、キャッチフレーズなど、あらゆるマーケティング要素をペルソナに評価してもらえます。<br><br>複数案の比較検証、クリエイティブの評価、ペルソナへの質問など、多様な検証ニーズに対応。直感的な操作で簡単に検証を開始できます。</p>
+                    <img src="input-screen.png" alt="インプット画面" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <div style="display:none; padding: 3rem; background: var(--secondary); border-radius: var(--border-radius); text-align: center;">
                         <div style="font-size: 4rem; margin-bottom: 1rem;">📊</div>
-                        <h4>A/Bテスト設定画面</h4>
+                        <h4>インプット画面</h4>
                         <p style="color: var(--text-muted); margin-top: 0.5rem;">シミュレーション画面のプレビュー</p>
                     </div>
                 </div>
                 <div class="screenshot-card fade-in">
                     <h3 class="screenshot-title">結果レポート画面</h3>
                     <p class="screenshot-description">仮説に対する反応をグラフ・テキストで自動レポート化。次の一手を"見える化"して、施策の質を高めます。<br><br>共感スコア、属性別反応率、改善提案が即座に確認でき、データドリブンな意思決定をサポートします。</p>
-                    <img src="/Users/rikanishizawa/Desktop/Screenshot 2025-06-28 at 16.36.50.png" alt="結果レポート画面" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="result-report-screen.png" alt="結果レポート画面" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <div style="display:none; padding: 3rem; background: var(--secondary); border-radius: var(--border-radius); text-align: center;">
                         <div style="font-size: 4rem; margin-bottom: 1rem;">📈</div>
                         <h4>結果レポート画面</h4>
@@ -2479,7 +2479,7 @@
                 <div class="screenshot-card fade-in">
                     <h3 class="screenshot-title">ペルソナ詳細画面</h3>
                     <p class="screenshot-description">500万人の仮想ペルソナ一人ひとりの詳細な属性や価値観、声を確認できます。年齢・職業・家族構成・趣味嗜好・購買行動まで、リアルな人物像が把握可能。<br><br>個別ペルソナの反応や意見を深く理解することで、より精緻なマーケティング戦略を立案できます。</p>
-                    <img src="/var/folders/pv/49xvr0216bn1cdzhmtrys76w0000gn/T/TemporaryItems/NSIRD_screencaptureui_hJPhqg/Screenshot 2025-06-27 at 19.48.33.png" alt="ペルソナ詳細画面" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="persona-detail-screen.png" alt="ペルソナ詳細画面" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <div style="display:none; padding: 3rem; background: var(--secondary); border-radius: var(--border-radius); text-align: center;">
                         <div style="font-size: 4rem; margin-bottom: 1rem;">👥</div>
                         <h4>ペルソナ詳細画面</h4>
@@ -2732,7 +2732,8 @@
             <div class="contact-content">
                 <div class="contact-form fade-in" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto;">
                     <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: var(--text-primary);">お問い合わせフォーム</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
                         <div class="form-group">
                             <label for="company">会社名</label>
                             <input type="text" id="company" name="company" required>
